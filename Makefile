@@ -1,10 +1,10 @@
 CC = gcc
-SOURCE = test_ll_cycle.c ll_cycle.c
+SOURCE = test_set.c set.c
 CFLAGS = -Wall -Wextra -Wpedantic
-OBJ = test_ll_cycle.o ll_cycle.o  
-HEADER = ll_cycle.h
+OBJ = test_set.o set.o  
+HEADER = set.h
 
-TARGET = check_cycle
+TARGET = set
 
 $(TARGET): ${OBJ} ${HEADER}
 	$(CC) $(OBJ) -o $(TARGET)
